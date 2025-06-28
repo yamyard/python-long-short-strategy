@@ -2,9 +2,6 @@ import numpy as np
 import pandas as pd
 
 def generate_signals(df_rank: pd.DataFrame, tickers, threshold=22):
-    """
-    Step 3 - 生成交易信号
-    """
     df_signal = df_rank.copy()
     for ticker in tickers:
         # 排名靠前的做空 ( -1 )，排名靠后的做多 ( +1 )

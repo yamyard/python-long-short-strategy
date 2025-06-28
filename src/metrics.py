@@ -1,9 +1,6 @@
 import numpy as np
 
 def evaluate_performance(strategy_returns):
-    """
-    Step 4 - 输出绩效指标：累计收益率、夏普比率和最大回撤
-    """
     if not strategy_returns.empty:
         # 累计收益率
         cumulative_returns = (strategy_returns + 1).cumprod()

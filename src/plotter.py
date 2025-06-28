@@ -2,10 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_results(strategy_returns, cumulative_returns, drawdown, max_drawdown, output_dir="."):
-    """
-    Step 5 - 结果可视化
-    保存图片到本地，不直接弹窗。
-    """
     if not strategy_returns.empty:
         # 累计收益曲线
         plt.figure(figsize=(10, 6))
