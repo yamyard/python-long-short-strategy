@@ -2,13 +2,13 @@ import yfinance as yf
 import pandas as pd
 
 def load_data(
-    tickers=None,
+    tickers,
     start_date='2018-01-01',
     end_date='2024-03-01',
     verbose=True
 ):
-    if tickers is None:
-        tickers = DEFAULT_TICKERS
+    if tickers is None or not tickers:
+        raise ValueError("请在调用 load_data 时传入非空的 tickers 列表。")
 
     df = yf.download(
         tickers,

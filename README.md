@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Usage Instructons
 
-1. Configure your stock parameters in `config.json` .
+1. Configure your stock parameters in `config.yaml` .
 2. Run the main script to backtest your strategy:
 
 ```

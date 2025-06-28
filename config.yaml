@@ -1,0 +1,42 @@
+tickers:
+  - AAPL    # Apple Inc.
+  - MSFT    # Microsoft Corporation
+  - GOOGL   # Alphabet Inc.
+  - TSLA    # Tesla Inc.
+  - AMZN    # Amazon.com Inc.
+  - META    # Meta Platforms Inc.
+  - NVDA    # NVIDIA Corporation
+  - BABA    # Alibaba Group Holding Ltd.
+  - NFLX    # Netflix Inc.
+  - ORCL    # Oracle Corporation
+  - ADBE    # Adobe Inc.
+  - INTC    # Intel Corporation
+  - AMD     # Advanced Micro Devices Inc.
+  - CRM     # Salesforce Inc.
+  - PYPL    # PayPal Holdings Inc.
+  - CSCO    # Cisco Systems Inc.
+  - QCOM    # Qualcomm Inc.
+  - IBM     # International Business Machines Corp.
+  - AVGO    # Broadcom Inc.
+  - TXN     # Texas Instruments Inc.
+  - PEP     # PepsiCo Inc.
+  - KO      # The Coca-Cola Company
+  - WMT     # Walmart Inc.
+  - JPM     # JPMorgan Chase & Co.
+  - BAC     # Bank of America Corp.
+  - V       # Visa Inc.
+  - MA      # Mastercard Inc.
+  - UNH     # UnitedHealth Group Inc.
+  - ABBV    # AbbVie Inc.
+  - MRK     # Merck & Co. Inc.
+  - PFE     # Pfizer Inc.
+  - TMO     # Thermo Fisher Scientific Inc.
+  - XOM     # Exxon Mobil Corporation
+  - CVX     # Chevron Corporation
+  - COP     # ConocoPhillips
+  - DIS     # The Walt Disney Company
+  - MCD     # McDonald's Corporation
+  - NKE     # NIKE Inc.
+  - COST    # Costco Wholesale Corporation
+  - SBUX    # Starbucks Corporation
+  - LLY     # Eli Lilly and Company
