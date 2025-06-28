@@ -52,8 +52,3 @@ def load_data(
         if missing:
             print(f"未能获取数据的股票: {missing}")
     return data
-
-if __name__ == "__main__":
-    tickers = ['AAPL', 'MSFT', 'GOOGL', 'TSLA', 'INVALIDTICKER']
-    df = load_data(tickers=tickers, start_date='2024-01-01', end_date='2024-02-01')
-    print(df.head())

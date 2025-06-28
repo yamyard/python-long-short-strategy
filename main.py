@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
-from src.data_loader import load_data, DEFAULT_TICKERS
-from src.returns_calculator import calculate_daily_returns
-from src.trading_signal import generate_signals, calculate_strategy_returns
-from src.performance_metrics import evaluate_performance
-from src.visualization import plot_results
+from src.fetcher import load_data, DEFAULT_TICKERS
+from src.returns import calculate_daily_returns
+from src.signals import generate_signals, calculate_strategy_returns
+from src.metrics import evaluate_performance
+from src.plotter import plot_results
 
 if __name__ == "__main__":
     # Step 1: 获取数据
@@ -14,12 +14,10 @@ if __name__ == "__main__":
     # Step 2: 计算每日收益率和排名
     daily_stock_returns, df_rank = calculate_daily_returns(data)
 
-    # Step 3: 生成交易信号和策略收益
+    # Step 3: 生成交易信号和策略收益并输出信号数据示例
     df_signal = generate_signals(df_rank, tickers)
     strategy_returns, returns = calculate_strategy_returns(df_signal, daily_stock_returns, tickers)
-
-    # 输出信号数据示例
-    print("信号数据 DataFrame 示例：")
+    print("Signal DataFrame：")
     print(df_signal.head(3))
 
     # Step 4: 绩效指标
