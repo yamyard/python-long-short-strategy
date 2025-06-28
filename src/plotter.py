@@ -1,7 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 def plot_results(strategy_returns, cumulative_returns, drawdown, max_drawdown, output_dir="."):
+    # 自动创建输出目录
+    os.makedirs(output_dir, exist_ok=True)
+
     if not strategy_returns.empty:
         # 累计收益曲线
         plt.figure(figsize=(10, 6))
@@ -10,7 +14,7 @@ def plot_results(strategy_returns, cumulative_returns, drawdown, max_drawdown, o
         plt.xlabel('Date')
         plt.ylabel('Cumulative Return')
         plt.grid(True)
-        plt.savefig(f"{output_dir}/cumulative_returns.png", bbox_inches='tight')
+        plt.savefig(os.path.join(output_dir, "cumulative_returns.png"), bbox_inches='tight')
         plt.close()
 
         # 6个月滚动夏普比率
@@ -23,7 +27,7 @@ def plot_results(strategy_returns, cumulative_returns, drawdown, max_drawdown, o
         plt.xlabel('Date')
         plt.ylabel('Sharpe Ratio')
         plt.grid(True)
-        plt.savefig(f"{output_dir}/rolling_sharpe_ratio.png", bbox_inches='tight')
+        plt.savefig(os.path.join(output_dir, "rolling_sharpe_ratio.png"), bbox_inches='tight')
         plt.close()
 
         # 最大回撤
@@ -35,5 +39,5 @@ def plot_results(strategy_returns, cumulative_returns, drawdown, max_drawdown, o
         plt.axhline(max_drawdown, color='red', linestyle='--', label='Max Drawdown')
         plt.legend()
         plt.grid(True)
-        plt.savefig(f"{output_dir}/max_drawdown.png", bbox_inches='tight')
+        plt.savefig(os.path.join(output_dir, "max_drawdown.png"), bbox_inches='tight')
         plt.close()

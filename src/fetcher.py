@@ -1,8 +1,6 @@
 import yfinance as yf
 import pandas as pd
 
-DEFAULT_TICKERS = ['AAPL', 'MSFT', 'GOOGL', 'TSLA']
-
 def load_data(
     tickers=None,
     start_date='2018-01-01',
