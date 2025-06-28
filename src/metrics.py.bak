@@ -20,7 +20,7 @@ def evaluate_performance(strategy_returns):
         max_drawdown = drawdown.min()
 
         print("Cumulative Returns:")
-        print(cumulative_returns.iloc[-1] if not cumulative_returns.empty else "No trades executed.")
+        print(cumulative_returns[-1] if not cumulative_returns.empty else "No trades executed.")
         print("\nSharpe Ratio:")
         print(sharpe_ratio)
         print("\nMax Drawdown:")
