@@ -8,6 +8,7 @@ from src.signals import generate_signals, calculate_strategy_returns
 from src.metrics import evaluate_performance
 from src.plotter import plot_results
 
+# 可自定义股票池
 def load_config_tickers(config_path="config.json"):
     if os.path.exists(config_path):
         with open(config_path, "r", encoding="utf-8") as f:
@@ -22,7 +23,7 @@ def load_config_tickers(config_path="config.json"):
 
 if __name__ == "__main__":
     # Step 1: 获取数据
-    tickers = load_config_tickers("config.json")  # 可自定义股票池
+    tickers = load_config_tickers("config.json")
     data = load_data(tickers=tickers, start_date="2018-01-01", end_date="2024-03-01")
 
     # Step 2: 计算每日收益率和排名
