@@ -10,5 +10,5 @@
     - `metrics.py` - Functions for calculating performance evaluation metrics.
     - `plotter.py` - Functions for visualization.
 - `README.md` - Project description document.
-- `config.json` - Configuration file.
+- `config.yaml` - Configuration file.
 - `requirements.txt` - List of Python dependencies.
