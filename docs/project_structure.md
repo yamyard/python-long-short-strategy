@@ -1,7 +1,7 @@
 # Project Structure
 
 - `main.py` - The main entry script of the project, used to run the overall workflow.
-- `docs` - Project documentation.
+- `docs/` - Project documentation.
 - `output/` - Example output files.
 - `src/` - Source code directory containing core modules:
     - `fetcher.py` - Functions related to data loading and preprocessing.
